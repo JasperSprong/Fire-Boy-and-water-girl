@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>
+    <title>Regels</title>
+</head>
+
+<style>
+    Body{
+        font-family: 'Courier New', Courier, monospace;
+        background-color: rgba(16, 16, 136, 0.818);
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        margin: 0;
+        position: relative; 
+    }
+
+    #IntroTxt{
+    border: 0.2px solid rgba(245, 245, 245, 0.481);
+    color: white;
+    margin-top: 1.2em;
+    font-size: 5em;}
+
+
+    #RegelsTxt{
+    color: white;
+    font-size: 1em;
+    margin-top: 2em;
+    width: 20%;}
+
+    #ArrowsTxt{
+        margin-left: -20em;
+        color: white;
+        width: 20%;}
+        
+    #WSADTxt{
+        margin-top: -4em;
+        margin-left: 22em;
+        color: white;
+        width: 20%;
+    }
+    
+    #Player1, #Player2{
+        margin-top: 2em;
+        gap: 20px;
+        height: 7em;
+        width: 6em;
+    }
+    #Player1{
+        margin-left: -20em;
+    }
+    #Player2{
+        margin-top: -7.1em;
+        margin-left: 25em;}
+
+    button{
+        font-size: 2em;
+        background-color: transparent;
+        border: 1px solid black;
+        color: whitesmoke;
+    }
+
+    button:hover{
+        background-color: rgba(6, 34, 34, 0.74);
+    }
+
+
+</style>
+
+<header id="IntroTxt">Regels Van het spell</header>
+
+<p id="RegelsTxt">In dit spell gaan twee spellers door een level, en het doel is om niet doodt te gaan, en onderweg punten op te paken</p>
+
+<img src="assets/dude.png" alt="Player1" id="Player1"> 
+<img src="assets/dude - Copy.png" alt="Player2" id="Player2"> 
+
+<p id="ArrowsTxt">De Eerte speller gebruikt pijtes om zijn caracter te bewegen</p>
+<p id="WSADTxt">De Tweede speller gebruikt "WSAD" om zijn caracter te bewegen</p>
+
+
+
+<button id="BackBtn">Head Back To the Main Menu</button>
+
+<script>
+        document.getElementById('BackBtn').addEventListener('click', function() {
+            window.location.href = 'index.html';
+        });
+
+
+</script>

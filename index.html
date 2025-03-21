@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vuurjongen en Watermeisje - Startschermspel</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-image: url('assets/fireboy_and_watergirl_is_logo_by_edibetaawo_dffs1br-fullview.png');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            position: relative; 
+        }
+        #start-button {
+            font-family: 'Courier New', Courier, monospace;
+            padding: 10px 20px;
+            font-size: 30px;
+            background-color: rgba(52, 152, 219, 0.59);
+            color: #fff;
+            border: 1px solid black;
+            cursor: pointer;}
+        #start-button:hover{background-color: rgba(52, 152, 219, 0.851);}
+
+        #RegelsBtn{
+        font-family: 'Courier New', Courier, monospace;
+        margin-top: 2em;
+        padding: 10px 20px;
+        font-size: 30px;
+        background-color: rgba(52, 152, 219, 0.59);
+        color: #fff;
+        border: 1px solid black;
+        cursor: pointer;}
+
+        #RegelsBtn:hover{background-color: rgba(52, 152, 219, 0.851);}
+
+        .movement-icons {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+        .arrow-icon, .wasd-text {
+            display: inline-block;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <button id="start-button">Begin!</button>
+    <button id="RegelsBtn">Regels van het spell!</button>
+    
+    <!-- Bewegingsiconen en tekst -->
+    <div class="movement-icons">
+        <div class="arrow-icon">
+            <img src="assets/Other/" alt="Pijltjestoetsen">
+        </div>
+        <div class="wasd-text">
+            <img src="assets/Other/" alt="Pijltjestoetsen">
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('start-button').addEventListener('click', function() {
+            window.location.href = 'MainGame.html';
+        });
+        document.getElementById('RegelsBtn').addEventListener('click', function() {
+            window.location.href = 'Regels.html';
+        });
+    </script>
+</body>
+</html>

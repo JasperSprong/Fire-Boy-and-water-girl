@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vuurjongen en Watermeisje - Startschermspel</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+        #start-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="start-button">Start het spel</button>
+
+    <script>
+        // Voeg een eventlistener toe aan de knop om het spel te starten
+        document.getElementById('start-button').addEventListener('click', function() {
+            // Redirect naar het spel of voer andere spellogica in
+            window.location.href = 'index.html'; // Verander 'spel.html' naar de daadwerkelijke locatie van je spel.
+        });
+    </script>
+</body>
+</html>
